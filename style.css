@@ -1,0 +1,257 @@
+/*parti comuni in tutto il sito*/
+section {
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+.titolo {
+    font-size: 5vh;
+    text-align: center;
+    margin-top: 1.5vh;
+}
+
+.sottotitolo {
+    font-size: 3vh;
+    text-align: center;
+    margin-top: -2vh;
+    margin-bottom: 5vh;
+}
+
+.textfield {
+    width: 40vh;  
+    height: 4vh;
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+}
+
+.btn {
+    color: white;
+    width: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vh;
+    transition: transform 0.3s ease;
+}
+.btn:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+/*parti esclusive solo ad alcune section*/
+.mind-reader, .vbucks, .minecraft{
+    background-color: #1A1A1A;
+
+    .titolo {
+        color: #0B5ED7;
+    }
+
+    .sottotitolo {
+        color: white;
+        margin-top: -2vh;
+    }
+
+    .textfield {
+        margin-top: 2vh;   
+    }
+
+    .btn {
+        background-color: #0B5ED7;
+    }
+    .btn:hover {
+        background-color: #08439b;
+    }
+    /*solo mind reader*/
+    .result {
+        height: 35vh;
+        width: 50vh;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        background-color: #121212;
+        border-radius: 5vh 5vh 5vh 0vh;
+        align-content: center;
+
+        .titolo {
+            font-size: 4vh;
+        }
+        .sottotitolo {
+            margin: 0;
+            font-size: 3vh;
+        }
+    }
+
+    #mind-reader-result {
+        opacity: 0; /*! 0*/
+    }
+}
+
+/*parti esclusive solo ad alcune section*/
+.time-checker, .credit-card, .alberto{
+    background-color: #121212;
+
+    .titolo {
+        color: #198754;
+    }
+
+    .sottotitolo {
+        color: white;
+        margin-top: -2vh;
+    }
+
+    .textfield {
+        margin-top: 25vh;
+    }
+
+    .btn {
+        background-color: #198754;
+        margin-top: 25vh;
+        height: 5vh;
+        width: 15vh;
+    }
+    .btn:hover {
+        background-color: #115d3a;
+    }
+        .freccia{
+            position: relative;
+            bottom: 40px;
+            right:-1000px;
+            transform: rotate(-40deg);
+        }
+        .emoji{
+
+            position: relative;
+            top: -550px;
+            right:-1350px;
+            width: 340px;
+        }
+        .emoji2{
+
+            position: relative;
+            top: 50px;
+            left:-940px;
+            width: 340px;
+        }
+        .emoji3{
+
+            position: relative;
+            bottom: 550px;
+            left:-1260px;
+            width: 340px;
+        }
+        .hidden-images img {
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+        .visible {
+            opacity: 1 !important;
+        }
+        .credit-card-result {
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        
+}
+
+.vbucks{
+
+    .btn{
+        margin-top:25vh;
+        width: 25vh;
+        height: 6vh;
+    }
+    
+}
+
+.credit-card{
+
+    .btn{
+        margin-top:25vh;
+        width: 30vh;
+        height: 6vh;
+    }
+}
+
+.minecraft{
+    .btn{
+        margin-top:25vh;
+        width: 40vh;
+        height: 6vh;
+    }
+}
+
+.alberto{
+    
+    .eyes{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        text-align: center;
+      }
+      .eye{
+        width: 240px;
+        height: 120px;
+        background: #fff;
+        display: inline-block;
+        margin: 40px;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .ball{
+        width: 40px;
+        height: 40px;
+        background: #000;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 50%;
+        border: 15px solid #333;
+      }
+      .sottotitolo{
+        margin-bottom: 25vh;
+      }
+}
+
+footer {
+    background-color: rgba(68, 84, 99, 0.1);
+    backdrop-filter: blur(5px);
+    font-size: 19px;
+    color: #fff;
+    text-align: center;
+    margin-left: 25%;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 50%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+
+::-webkit-scrollbar {
+    width: 1.5vh;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(35, 35, 35);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(39, 128, 224);
+    border-radius: 5px;
+}
